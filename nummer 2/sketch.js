@@ -21,32 +21,35 @@ function draw(){
   background("white")
   fill("red")
   stroke("black")
+
+  rectangels.forEach(i => {
+    i.draw()
+  })
+  
   circle(x,y,20)
   x = x + a
   y = y + b
-  rectangels.forEach(i => {
-    i.draw()
-  });
 }
 
 function keyPressed(){
-  if (keyCode == LEFT_ARROW && a >= 0){
+  if (keyCode == LEFT_ARROW/* && a >= 0*/){
     a = -1
     b = 0
   }
-  else if (keyCode == RIGHT_ARROW && a <= 0){
+  else if (keyCode == RIGHT_ARROW/* && a <= 0*/){
     a = 1
     b = 0
   }
-  else if (keyCode == DOWN_ARROW && b <= 0){
+  else if (keyCode == DOWN_ARROW/* && b <= 0*/){
     b = 1
     a = 0
   }
-  else if (keyCode == UP_ARROW && b >= 0){
+  else if (keyCode == UP_ARROW/* && b >= 0*/){
     b = -1
     a = 0
   }else if (keyCode == 32){
     print("space",mouseX, mouseY, x, y)
+    rectMode(CORNERS)
     rectangels[rectangels.length] = new rectangel(mouseX,mouseY,x,y)
   }
 }
