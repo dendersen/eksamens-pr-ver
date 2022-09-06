@@ -1,0 +1,1 @@
+console.log(eval(Error.prototype[1]))

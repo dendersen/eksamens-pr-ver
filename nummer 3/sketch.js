@@ -45,11 +45,3 @@ async function calc(){
   }
 }
 
-
-
-/**
- * 
- * @param {Array} a
- * @returns {number}
- */
-eval(r=()=>(console.log("hello") + r()) + r())

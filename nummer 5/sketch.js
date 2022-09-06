@@ -57,6 +57,7 @@ function lige_ulige(lige,n){
     }
   }
   console.log(l)
+  return(l)
 }
 
 function randoCirkel(n){
