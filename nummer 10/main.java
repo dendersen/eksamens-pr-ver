@@ -2,7 +2,7 @@
 en string er en liste af char
 den kan derfor behndles som en hver anden liste, dog har den en masse ajove funktioner knyttet til den.
 */
-public class main {
+public class Main {
   public static void main(String[] args) {
     // RunMethods()
     System.out.println(

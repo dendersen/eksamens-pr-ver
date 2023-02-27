@@ -1,0 +1,11 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "core.jar"
+  ],
+  "presentation-mode.configBackup": {
+    "workbench.colorTheme": "undefined",
+    "window.zoomLevel": "undefined",
+    "workbench.activityBar.visibility": "undefined"
+  }
+}
